@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import logo from './PACHA.png';
 import './Menu.css';
 import {NavLink} from "react-router-dom";
-
 class Menu extends React.Component {
   render() {
   	return (
@@ -18,22 +16,13 @@ class Menu extends React.Component {
 		    </button>
 		    <div className="collapse navbar-collapse" id="navbarCollapse">
 			    <ul className="navbar-nav mr-auto">			  
-			        <li className="nav-item">
+			        <li className="nav-item"> 
 			        </li>
-			    </ul>
-
-			    
-				<div class="dropdown">
-                <button class="opciones btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Comunidad
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<NavLink to="/login" className="nav-link">Ingreso </NavLink>
-					<NavLink to="/registro" className="nav-link">Registro </NavLink>
-					<NavLink to="/nosotros" className="nav-link">Nosotros </NavLink>
-                  
-                </div>
-                </div>
+			    </ul>			    
+					<NavLink to="/login" className="nav-link"> Login </NavLink>
+					<NavLink to="/registro" className="nav-link"> Sign in </NavLink>
+					<NavLink to="/nosotros" className="nav-link">US </NavLink>
+			
 		    </div>		    
 
 		</nav>

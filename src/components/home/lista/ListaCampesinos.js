@@ -21,8 +21,8 @@ const ListaCampesinos = () => {
     <div className="card-body">
       <h5 className="card-title">  {card.name}</h5>
       <Typography variant="body2" color="textSecondary" component="p">
-        <p>{card.description}  // Precio {card.precio}:// Descripción: {card.informacion} //
-         Teléfono: {card.contacto} //Web: {card.web}</p>
+        <p>Seller: {card.description}  // Price:  {card.precio}// Description: {card.informacion} //
+        Contact: {card.contacto} //Web: {card.web}</p>
         <Rating name="read-only" value={card.calificacion} readOnly />
      </Typography>
     </div>

@@ -61,11 +61,14 @@ export default function SignInSide() {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
-          <img src='https://img2.freepng.es/20180626/yrt/kisspng-computer-icons-agriculture-farmer-crop-farmer-icon-5b32b7f7e3f531.1030307415300505519337.jpg' height="50" width="50" ></img>
+          <a href="/">             
+              <img src='https://img2.freepng.es/20180626/yrt/kisspng-computer-icons-agriculture-farmer-crop-farmer-icon-5b32b7f7e3f531.1030307415300505519337.jpg' height="50" width="50" ></img>
       
+			    </a>
+          
           </Avatar>
           <Typography component="h1" variant="h5">
-            Iniciar Sesión
+            LOGIN
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -74,7 +77,7 @@ export default function SignInSide() {
               required
               fullWidth
               id="email"
-              label="Correo electrónico"
+              label="Email"
               name="email"
               autoComplete="email"
               autoFocus
@@ -85,7 +88,7 @@ export default function SignInSide() {
               required
               fullWidth
               name="password"
-              label="Contraseña"
+              label="Password"
               type="password"
               id="password"
               autoComplete="current-password"
@@ -98,12 +101,12 @@ export default function SignInSide() {
               className="boton-login"
             >
               
-					<a href="http://localhost:3002/admin/dashboard" className="nav-link">Ingresar </a> 
+					<a href="http://localhost:3002/admin/dashboard" className="nav-link">Login </a> 
             </Button>
             <Grid container>
               <Grid item xs>
                 <NavLink  to="/" className="nav-recover">
-                  ¿Olvido su contraseña?
+                  Forgot your password?
                 </NavLink>
               </Grid>
             </Grid>

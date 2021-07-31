@@ -3,11 +3,8 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -64,11 +61,12 @@ export default function SignInSide() {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
-          <img src='https://img2.freepng.es/20180626/yrt/kisspng-computer-icons-agriculture-farmer-crop-farmer-icon-5b32b7f7e3f531.1030307415300505519337.jpg' height="50" width="50" ></img>
-      
+          <a href="/">             
+              <img src='https://img2.freepng.es/20180626/yrt/kisspng-computer-icons-agriculture-farmer-crop-farmer-icon-5b32b7f7e3f531.1030307415300505519337.jpg' height="50" width="50" ></img>
+          </a>
           </Avatar>
           <Typography component="h1" variant="h5">
-            Registrarse
+              SIGN IN
           </Typography>
           <form className={classes.form} noValidate>
             <TextField
@@ -77,9 +75,9 @@ export default function SignInSide() {
               required
               fullWidth
               id="name"
-              label="Nombres"
+              label="Name"
               name="name"
-              autoComplete="Nombres"
+              autoComplete="name"
               autoFocus
             />
             <TextField
@@ -88,7 +86,7 @@ export default function SignInSide() {
               required
               fullWidth
               id="lastname"
-              label="Apellidos"
+              label="Last name"
               name="lastname"
               autoComplete="Apellidos"
               autoFocus
@@ -99,7 +97,7 @@ export default function SignInSide() {
               required
               fullWidth
               id="fono"
-              label="Teléfono"
+              label="Phone"
               name="fono"
               autoComplete="Telefono"
               autoFocus
@@ -110,7 +108,7 @@ export default function SignInSide() {
               required
               fullWidth
               id="email"
-              label="Correo electrónico"
+              label="Email"
               name="email"
               autoComplete="email"
               autoFocus
@@ -121,7 +119,7 @@ export default function SignInSide() {
               required
               fullWidth
               id="web"
-              label="Página de contacto"
+              label="Web"
               name="web"
               autoComplete="web"
               autoFocus
@@ -132,7 +130,7 @@ export default function SignInSide() {
               required
               fullWidth
               name="password"
-              label="Contraseña"
+              label="Password"
               type="password"
               id="password"
               autoComplete="current-password"
@@ -145,7 +143,7 @@ export default function SignInSide() {
               className="boton-login"
             >
               
-					<NavLink to="/" className="nav-link">Registrar </NavLink> 
+					<NavLink to="/" className="nav-link">Sign in </NavLink> 
             </Button>
           </form>
         </div>
