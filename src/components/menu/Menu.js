@@ -7,8 +7,8 @@ class Menu extends React.Component {
   	return (
 		  
   		<nav className="principal navbar navbar-expand-lg navbar-light fixed-top bg-light">
-
-		   <a href="/">             
+			
+		   <a href="/inicio">             
 		   		<img src={logo} alt="logo" height="" width="150" /> 
 			</a>
 		    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

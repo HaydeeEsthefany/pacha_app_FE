@@ -3,10 +3,8 @@ import MapView from './components/home/MapView';
 import './App.css';
 import Nosotros from './components/nosotros/Nosotros'
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
-
-import AdminLayout from "layouts/Admin.js";
 
 function App() {
   return (

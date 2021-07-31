@@ -26,6 +26,7 @@ ReactDOM.render(
 		        <Route path='/login'    component={Login} /> 
 		        <Route path='/registro' component={Registro} /> 
 		        <Route path='/contacto' component={Contacto} /> 
+		        <Route path='/inicio'   component={Home} />
 
 
 
