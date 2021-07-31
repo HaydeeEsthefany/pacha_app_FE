@@ -49,11 +49,10 @@ export default function SignInSide() {
       </Grid>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-          <a href="/inicio">             
+          <Avatar className={classes.avatar}>  
+          <NavLink to="/inicio">             
               <img src='https://img2.freepng.es/20180626/yrt/kisspng-computer-icons-agriculture-farmer-crop-farmer-icon-5b32b7f7e3f531.1030307415300505519337.jpg' height="50" width="50" ></img>
-      
-			    </a>
+          </NavLink>
           
           </Avatar>
           <Typography component="h1" variant="h5">

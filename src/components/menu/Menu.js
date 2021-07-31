@@ -8,9 +8,9 @@ class Menu extends React.Component {
 		  
   		<nav className="principal navbar navbar-expand-lg navbar-light fixed-top bg-light">
 			
-		   <a href="/inicio">             
+		    <NavLink to="/inicio" className="nav-link">  
 		   		<img src={logo} alt="logo" height="" width="150" /> 
-			</a>
+			</NavLink>
 		    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		     	<span className="navbar-toggler-icon"></span>
 		    </button>
